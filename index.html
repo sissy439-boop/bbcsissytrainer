@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>BBC SISSY GIRL BUSSY TRAINER - EXTREME</title>
-<meta name="description" content="BBC Sissy Girl Bussy Trainer - Extreme. Daily tasks, goon fuel, denial tracking, mantras & live Mistress training for pathetic white sissies who crave Black Cock ownership. Level up your bussy today.">
+<meta name="description" content="BBC Sissy Girl Bussy Trainer - Extreme. Daily tasks, goon fuel, denial tracking, mantras & live Mistress training for pathetic white sissies who crave Black Cock ownership.">
 <style>
     body { background:#0a0a0a; color:#ff69b4; font-family:Arial,sans-serif; margin:0; padding:15px; text-align:center; min-height:100vh; }
     h1 { color:#fff; text-shadow:0 0 25px #ff1493, 0 0 50px #000; font-size:2.4em; margin:15px 0; }
@@ -47,4 +47,86 @@
 
 <div class="panel">
     <h2>BBC Goon Fuel - Click & Ruin Yourself</h2>
-    <a
+    <a href="https://www.pornhub.com/view_video.php?viewkey=ph63bdba0c2ab9f" target="_blank" class="button">1. Sissy BBC Addiction Hypno</a>
+    <a href="https://www.pornhub.com/view_video.php?viewkey=ph608866c3d4829" target="_blank" class="button">2. BBC Mantra Loop - Repeat After Me Girl</a>
+    <a href="https://www.pornhub.com/view_video.php?viewkey=ph5f8a8b5c5e5e5" target="_blank" class="button">3. Big Black Dick Size Queen PMV</a>
+    <a href="https://www.pornhub.com/view_video.php?viewkey=ph5f2468b65ed89" target="_blank" class="button">4. White Sissy Girl BBC Ownership Hypno</a>
+    <a href="https://www.tnaflix.com/anal-porn/BNWO-BBC-Hypno-%28VERY-POWERFUL%29/video7495186" target="_blank" class="button">5. Eternal BNWO Sissy Cumdump Loop</a>
+</div>
+
+<div class="panel">
+    <h2>Daily Mantras (Say OUT LOUD, girl)</h2>
+    <ul id="mantras" style="text-align:left; max-width:600px; margin:15px auto; font-size:1.1em;"></ul>
+</div>
+
+<div class="panel">
+    <h2>Sissy Girl Journal</h2>
+    <textarea id="journal" rows="6" style="width:90%; background:#222; color:#ff69b4; border:2px solid #ff1493; border-radius:8px; padding:10px;"></textarea><br>
+    <button onclick="saveJournal()">Save Journal Entry</button>
+</div>
+
+<button onclick="resetProgress()" style="background:#8b0000; width:300px;">RESET PROGRESS (Punishment)</button>
+
+<script>
+const duties = [
+    {text:"Wear Slutty panties/Thong ALL DAY like a proper girl", pts:15},
+    {text:"Watch 15–20 min BBC hypno/PMV (edge)", pts:25},
+    {text:"Edge worthless clitty 3 times (NO cumming)", pts:20},
+    {text:"Plug your sissy bussy for at least 2 hours", pts:20},
+    {text:"Suck realistic dark dildo 10+ min", pts:25},
+    {text:"Caption 5 BBC/sissy images + send proof", pts:20},
+    {text:"Full goon session", pts:30},
+    {text:"Kneel & beg like a good girl", pts:20}
+];
+const mantras = [
+    "I'm a worthless white sissy girl",
+    "BBC is superior",
+    "My bussy exists for Black Cock",
+    "White boys like me were made to be ruined",
+    "I’m just a BBC cumslut in training"
+];
+let points = 32515202515335;
+
+function getLevel(){ return "6 - Eternal BBC Cumrag Girl"; }
+function updateUI(){
+    document.getElementById("points").textContent = points.toLocaleString();
+    document.getElementById("level").textContent = "Level " + getLevel();
+}
+
+const dutyDiv = document.getElementById("duties");
+duties.forEach((d, i) => {
+    const label = document.createElement("label");
+    label.className = "checkbox-label";
+    label.innerHTML = `<input type="checkbox" onchange="completeDuty(${i}, this.checked)"> ${d.text} <small>(+${d.pts} pts)</small>`;
+    dutyDiv.appendChild(label);
+});
+
+function completeDuty(i, checked){
+    if(checked){ 
+        points += duties[i].pts; 
+        updateUI(); 
+        alert("Good girl~ Mistress is proud 💕"); 
+    }
+}
+
+document.getElementById("mantras").innerHTML = mantras.map(m => `<li>${m}</li>`).join("");
+
+function saveJournal(){
+    if(document.getElementById("journal").value.length > 20) 
+        alert("Journal saved. Mistress owns you even more now ♠️");
+}
+function addPoints(x){ 
+    points += x; 
+    updateUI(); 
+    alert("Mistress rewarded her good little cumrag~"); 
+}
+function resetProgress(){ 
+    if(confirm("Punish your sissy girl?")) { 
+        points = Math.max(0, points-500000); 
+        updateUI(); 
+    } 
+}
+updateUI();
+</script>
+</body>
+</html>
